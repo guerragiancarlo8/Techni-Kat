@@ -1,0 +1,173 @@
+SimpleHistoryExample
+Connecting to 10.8.8.1:8194
+Sending Request: HistoricalDataRequest = {
+    securities[] = {
+        "IBM US Equity", "MSFT US Equity"
+    }
+    fields[] = {
+        "PX_LAST", "OPEN"
+    }
+    periodicityAdjustment = ACTUAL
+    periodicitySelection = MONTHLY
+    startDate = "20060101"
+    endDate = "20061231"
+    maxDataPoints = 100
+}
+
+SessionConnectionUp = {
+    server = "10.8.8.1:8194"
+}
+
+SessionStarted = {
+}
+
+ServiceOpened = {
+    serviceName = "//blp/refdata"
+}
+
+HistoricalDataResponse = {
+    securityData = {
+        security = "IBM US Equity"
+        eidData[] = {
+        }
+        sequenceNumber = 0
+        fieldExceptions[] = {
+        }
+        fieldData[] = {
+            fieldData = {
+                date = 2006-01-31
+                PX_LAST = 81.300000
+                OPEN = 82.450000
+            }
+            fieldData = {
+                date = 2006-02-28
+                PX_LAST = 80.240000
+                OPEN = 80.900000
+            }
+            fieldData = {
+                date = 2006-03-31
+                PX_LAST = 82.470000
+                OPEN = 80.240000
+            }
+            fieldData = {
+                date = 2006-04-30
+                PX_LAST = 82.340000
+                OPEN = 82.720000
+            }
+            fieldData = {
+                date = 2006-05-31
+                PX_LAST = 79.900000
+                OPEN = 82.590000
+            }
+            fieldData = {
+                date = 2006-06-30
+                PX_LAST = 76.820000
+                OPEN = 79.890000
+            }
+            fieldData = {
+                date = 2006-07-31
+                PX_LAST = 77.410000
+                OPEN = 77.540000
+            }
+            fieldData = {
+                date = 2006-08-31
+                PX_LAST = 80.970000
+                OPEN = 76.650000
+            }
+            fieldData = {
+                date = 2006-09-30
+                PX_LAST = 81.940000
+                OPEN = 81.130000
+            }
+            fieldData = {
+                date = 2006-10-31
+                PX_LAST = 92.330000
+                OPEN = 81.760000
+            }
+            fieldData = {
+                date = 2006-11-30
+                PX_LAST = 91.920000
+                OPEN = 92.500000
+            }
+            fieldData = {
+                date = 2006-12-31
+                PX_LAST = 97.150000
+                OPEN = 91.900000
+            }
+        }
+    }
+}
+
+HistoricalDataResponse = {
+    securityData = {
+        security = "MSFT US Equity"
+        eidData[] = {
+        }
+        sequenceNumber = 1
+        fieldExceptions[] = {
+        }
+        fieldData[] = {
+            fieldData = {
+                date = 2006-01-31
+                PX_LAST = 28.150000
+                OPEN = 26.250000
+            }
+            fieldData = {
+                date = 2006-02-28
+                PX_LAST = 26.870000
+                OPEN = 27.960000
+            }
+            fieldData = {
+                date = 2006-03-31
+                PX_LAST = 27.210000
+                OPEN = 26.980000
+            }
+            fieldData = {
+                date = 2006-04-30
+                PX_LAST = 24.150000
+                OPEN = 27.670000
+            }
+            fieldData = {
+                date = 2006-05-31
+                PX_LAST = 22.650000
+                OPEN = 24.320000
+            }
+            fieldData = {
+                date = 2006-06-30
+                PX_LAST = 23.300000
+                OPEN = 22.740000
+            }
+            fieldData = {
+                date = 2006-07-31
+                PX_LAST = 24.060000
+                OPEN = 23.530000
+            }
+            fieldData = {
+                date = 2006-08-31
+                PX_LAST = 25.700000
+                OPEN = 24.020000
+            }
+            fieldData = {
+                date = 2006-09-30
+                PX_LAST = 27.350000
+                OPEN = 25.890000
+            }
+            fieldData = {
+                date = 2006-10-31
+                PX_LAST = 28.710000
+                OPEN = 27.320000
+            }
+            fieldData = {
+                date = 2006-11-30
+                PX_LAST = 29.360000
+                OPEN = 28.780000
+            }
+            fieldData = {
+                date = 2006-12-31
+                PX_LAST = 29.860000
+                OPEN = 29.230000
+            }
+        }
+    }
+}
+
