@@ -1,14 +1,12 @@
-__author__ = 'dylan'
 import json
 import os
 import datetime
 
-class bloombergjson(object):
+class Bloombergjson(object):
     def __init__(self):
         pass
     def getJson(self):
         infoArray = []
-        security=""
         ticker =""
         date = ""
         last_price=""
