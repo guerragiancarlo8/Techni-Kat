@@ -28,6 +28,7 @@ class SearchHandler(object):
 
 
     def search(self,keyword):
+
         options = parseCmdLine()
 
         # Fill SessionOptions
@@ -68,13 +69,14 @@ class SearchHandler(object):
             print "Sending Request:", request
             # Send the request
             session.sendRequest(request)
+            with open('example.txt', 'a') as the_file:
 
-            # Process received events
-            while(True):
-                # We provide timeout to give the chance for Ctrl+C handling:
-                ev = session.nextEvent(500)
-                for msg in ev:
-                    print msg
+                # Process received events
+                while(True):
+                    # We provide timeout to give the chance for Ctrl+C handling:
+                    ev = session.nextEvent(500)
+                    for msg in ev:
+                        the_file.writable(msg+"\n")
 
                 if ev.eventType() == blpapi.Event.RESPONSE:
                     # Response completly received, so we could exit
