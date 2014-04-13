@@ -69,7 +69,7 @@ class SearchHandler(object):
             print "Sending Request:", request
             # Send the request
             session.sendRequest(request)
-            with open('example.txt', 'a') as the_file:
+            with open('example.txt', 'w') as the_file:
 
                 # Process received events
                 while(True):
