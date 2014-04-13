@@ -6,26 +6,6 @@ class SearchHandler(object):
     def __init__(self):
         pass
 
-    def parseCmdLine():
-        parser = OptionParser(description="Retrieve reference data.")
-        parser.add_option("-a",
-                          "--ip",
-                          dest="host",
-                          help="server name or IP (default: %default)",
-                          metavar="ipAddress",
-                          default="localhost")
-        parser.add_option("-p",
-                          dest="port",
-                          type="int",
-                          help="server port (default: %default)",
-                          metavar="tcpPort",
-                          default=8194)
-
-        (options, args) = parser.parse_args()
-        return options
-    def setKeyword(self,keyword):
-        self.keyword = keyword
-
 
     def search(self,keyword):
 
@@ -84,3 +64,22 @@ class SearchHandler(object):
         finally:
             # Stop the session
             session.stop()
+
+
+def parseCmdLine():
+    parser = OptionParser(description="Retrieve reference data.")
+    parser.add_option("-a",
+                      "--ip",
+                      dest="host",
+                      help="server name or IP (default: %default)",
+                      metavar="ipAddress",
+                      default="localhost")
+    parser.add_option("-p",
+                      dest="port",
+                      type="int",
+                      help="server port (default: %default)",
+                      metavar="tcpPort",
+                      default=8194)
+
+    (options, args) = parser.parse_args()
+    return options
