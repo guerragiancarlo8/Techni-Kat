@@ -1,5 +1,4 @@
 __author__ = 'dylan'
-import requests
 import json
 import os
 import datetime
